@@ -1,6 +1,6 @@
 <?php
 
-$_db_host = "localhost:3308";
+$_db_host = "localhost";
 $_db_username = "root";
 $_db_password = "";
 $_db_name = "popcorn";
