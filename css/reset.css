@@ -1,0 +1,120 @@
+html,body{
+    margin: 0;
+}
+body{
+    background: var(--body-color);
+    color: var(--color);
+    width: 100%;
+}
+a{
+    color: var(--link);
+}
+a:hover{
+    text-decoration: none;
+    color: var(--blue-light);
+}
+a:focus{
+    outline: none;
+}
+button:focus{
+    outline: none;
+}
+button>svg{
+    margin: 0 auto;
+    display: block;
+}
+div{
+    transition: all 200ms;
+}
+div>svg{
+    margin: 0 auto;
+    margin-top: 1px;
+    display: block;
+}
+hr{
+    margin: 4px 0;
+    border: 1px solid;
+    border-radius: 1px;
+}
+input[type='text'],input[type='file'],input[type='date'], input[type='number'], textarea,select{
+    background-color: var(--div-input) !important;
+    border: 1px solid var(--border-input) !important;
+    color: var(--text-color2);
+}
+input[type='text']:focus{
+    background-color: var(--div-input);
+    border: 1px solid var(--border-input);
+    color: var(--text-color2);
+}
+span,label,p{
+    color: var(--text-color);
+}
+
+/* CLASSES */
+
+/* ~ Imagens */
+.content_pic{
+    object-fit: cover;
+    object-position: center;
+}
+.img_capa{
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+.img_round{
+    width: 150px;
+    height: 150px !important;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 100%;
+}
+
+/* ~ Bootstrap */
+.btn-primary{
+    background-color: var(--blue);
+    border-color: var(--blue);
+}
+.btn-primary:disabled{
+    color: var(--btn_color_disabled);
+    background-color: var(--blue);
+    border-color: var(--blue);
+}
+.btn-primary:hover{
+    background-color: var(--blue-light);
+    border-color: var(--blue-light);
+}
+.btn-primary:focus{
+    background-color: var(--blue-light);
+    border-color: var(--blue-light);
+}
+.btn-primary:disabled:hover{
+    color: var(--btn_color_disabled);
+    background-color: var(--blue);
+    border-color: var(--blue);
+}
+.custom-select{
+    background: var(--select);
+    color: var(--text-color2);
+    border: 1px solid var(--border-input);
+}
+.custom-select:focus{
+    outline: none;
+    border: none;
+}
+.table{
+    background-color: var(--block);
+    color: var(--color);
+    border-radius: 5px !important;
+}
+.table th{
+    border-top: none;
+}
+.table tr:hover{
+    color: var(--color) !important;
+}
+.table-dark {
+    color: var(--text-color) !important;
+    background-color: var(--div-block) !important;
+}

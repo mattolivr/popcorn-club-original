@@ -1,0 +1,90 @@
+html,body{
+    overflow-x: hidden;
+	font-family: "modernsans";
+}
+#header_container{
+    flex-direction: row-reverse;
+    justify-content: right;
+    background-color: var(--div-tint); 
+}
+#header_nav{
+    width: 100%;
+}
+#header_nav ul{
+    right: 0;
+    top: 40%;
+}
+#section_div{
+    margin: 0; 
+    width: 100%;
+}
+#logo_icon{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    position: sticky;
+}
+#logo_icon a img{
+    width: 155px;
+    height: 150px;
+    margin-left: 10px;
+    transform: translateY(-50%);
+}
+#div_name{
+    width: fit-content;
+    background-color: var(--div-dark);
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 18px;
+    color: whitesmoke;
+    position: absolute;
+    top: 0;
+    left: 170px;
+    transform: translateY(-50%);
+}
+#div_name>span{
+    color: var(--white) !important;
+}
+#about_project, #about_location, #about_contact{
+    color: var(--text-color);
+}
+#about_project{
+    background-color: var(--div-light);
+    padding: 30px 10px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2em;
+    transform: translateY(-30%);
+}
+#about_location div p{
+    font-size: 1.4em;
+    text-align: center;
+}
+#about_location div{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+#about_contact{
+    background-color: var(--div-block);
+    display: flex;
+    font-size: 1.1em;
+}
+#about_contact div{
+    padding: 0 5%;
+}
+#about_contact h1{
+    font-size: 1.7em;
+    margin: 10px 0;
+}
+#about_contact span{
+    display: block;
+}
+#about_contact a{
+    color: var(--link);
+    font-weight: 400;
+}
+#about_contact a:hover{
+    color: var(--link-hover);
+    font-weight: 600;
+}

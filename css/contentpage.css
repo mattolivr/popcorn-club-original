@@ -1,0 +1,144 @@
+#header_container{
+    flex-direction: row-reverse;
+    justify-content: right;
+    background-color: var(--div-tint); 
+}
+#header_nav{
+    width: 100%;
+}
+#header_nav ul{
+    top: 40%;
+    right: 0;
+}
+#header_searchbar{
+    display: block;
+    top: 65%;
+    right: 5px;
+}
+#section_div{
+    width: 100%;
+    height: auto;
+    padding: 0 10px;
+    transition: all 600ms;
+}
+#section_div div{
+    transition: all 200ms;
+}
+#content_divpic{
+    width: 150px;
+    height: 150px;
+    padding: 0;
+    position: sticky;
+    transform: translateY(-50%);
+}
+#content_divpic p{
+    margin: 0;
+    color: var(--white);
+}
+#content_pic{
+    width: 220px;
+    height: 311px;
+    border: 3px solid var(--border-dark);
+    border-radius: 8px;
+}
+#content_info{
+    width: max-content;
+    position: absolute;
+    top: 37%;
+    left: 240px;
+}
+#content_name, #content_grade, #content_autor, #content_duration, #content_descr{
+    background-color: var(--div-dark);
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 18px;
+    color: var(--white);
+    height: fit-content;
+}
+#content_name{
+    width: max-content;
+    height: fit-content;
+}
+#content_duration, #content_grade, #content_autor{
+    width: fit-content;
+}
+#content_autor{
+    max-width: 250px;
+}
+#content_middle{
+    width: min-content;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15px;
+}
+#content_banner>img{
+    object-fit: fill;
+    object-position: center;
+    width: 1024px;
+    height: 576px;
+    border: 3px solid var(--border-dark);
+    border-radius: 8px;
+}
+@media screen and (max-width: 1700px)
+{
+    #content_banner>img{
+        width: 960px;
+        height: 540px;
+    }
+    #content_middle{
+        margin-right: 40px;
+        margin-left: auto;
+    }
+}
+@media screen and (max-width: 1480px)
+{
+    #content_middle{
+        margin-top: 110px;
+    }
+}
+@media screen and (max-width: 1220px)
+{
+    #content_banner>img{
+        width: 800px;
+        height: 450px;
+    }
+    #content_middle{
+        margin-right: auto;
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 1110px)
+{
+    #search_container{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 1030px)
+{
+    #content_banner>img{
+        width: 685px;
+        height: 385px;
+    }
+    #header_nav ul{
+        top: 10%;
+        left: 0;
+        margin-left: 11px;
+        font-size: 1.1em;
+    }
+    #header_searchbar{
+        top: 35%;
+        left: 17px;
+    }
+}
+#content_descr{
+    width: 100%;
+    border-radius: 8px;
+}
+#content_descr p{
+    color: var(--white);
+}
+#footer_container{
+    clear: both;
+    position: fixed;
+    bottom: 0;
+}
